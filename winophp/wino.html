@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Wino</title>
+        <meta charset="Utf-8">
+		<meta name="content" language="Polish">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+	<!-- Prezentacja ćwiczenia -->
+	
+        <header>
+            <nav>
+                <ul>
+                    <li><a class="scroll" href="#start">Strona startowa</a></li>
+                    <li><a class="scroll" href="#onas">O nas</a></li>
+                    <li><a class="scroll" href="#video">Video</a></li>
+                    <li><a class="scroll" href="#oferta">Oferty</a></li>
+                    <li><a class="scroll" href="#kont">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1 id="start" style="text-align: center;">Dobry<br>wybór<br>Wina</h1>
+        <img src="img/wines1.png" alt="">
+        <h2 id="onas">O nas</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non ex ac turpis egestas rhoncus eu ac leo. Morbi libero velit, consequat ornare ullamcorper quis,</p>
+        <p> tristique eget est. Sed ut ex varius, iaculis erat <br>
+         tristique eget est. Sed ut ex varius, iaculis erat ut, pulvinar elit.</p>
+        <p><a class="btn" href="#">O nas szczególnie</a></p>
+        <img style="width:100%;" src="img/wines2.png" alt="wino">
+		
+		<script>
+			$('a[href^="#"]').on('click', function (e) {
+				e.preventDefault();
+				var hsec = 1500;
+				var windows = this.hash;
+				var $windows = $(windows);
+				$('html, body').animate({
+					'scrollTop': $windows.offset().top
+				}, hsec, 'swing');
+			});	
+		</script>
+		
+        <h2 id="video">Video</h2>
+		
+			<video controls>
+				<a  href="https://www.youtube.com/watch?v=SPAxhNFrC_Y"></a>
+			</video>
+			
+			
+        <h2 id="oferta">Oferty</h2>
+        <div class="oferta">
+            <img class="img" src="img/wino.png" alt="wino 1">
+            <h3>Wino 1</h3>
+            <p>Lorem ipsum dolor sit amset, consectetur adipiscing elit. Cras dignissim convallis justo vitae imperdiet. Aliquam ornare accumsan mi in tempor. Praesent accumsan gravida velit. Fusce risus libero, interdum quis dignissim placerat, lacinia quis velit.</p>
+         
+            <p><a class="btn" href="#">Wkładam do koszyka</a></p>
+        </div>
+        <div class="oferta">
+            <img class="img" src="img/wino2.png" alt="wino 2">
+            <h3>Wino 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim convallis justo vitae imperdiet. Aliquam ornare accumsan mi in tempor. Praesent accumsan gravida velit. Fusce risus libero, interdum quis dignissim placerat, lacinia quis velit.</p>
+           
+            <p><a class="btn" href="#">Wkładam do koszyka</a></p>
+        </div>
+        <div class="oferta">
+            <img class="img" src="img/wino3.png" alt="wino 3">
+            <h3>Wino 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim convallis justo vitae imperdiet. Aliquam ornare accumsan mi in tempor. Praesent accumsan gravida velit. Fusce risus libero, interdum quis dignissim placerat, lacinia quis velit.</p>
+            <p><a class="btn" href="#">Wkładam do koszyka</a></p>
+        </div>
+		
+        <h2>Masz pytanie<br></h2>
+        <form action="wino2.php" method="post">
+            <div>
+                <input type="text" name="imie" value="Imie">
+            </div>
+            <div>
+                <input type="email" name="email" value="E-mail">
+            </div>
+            <div>
+                <select name="typ">
+                    <option>Typy wiadomośći</option>
+                    <option>Pytanie</option>
+                    <option>Opinie</option>
+                    <option>Inny</option>
+                </select>
+            </div>
+            <div>
+                <textarea name="wiadomosc" value="wiadomosc" rows="6">Kommentarz..</textarea>
+            </div>
+            <div>
+                <button class="btn">Wysyłaj</button>
+            </div>
+        </form>
+        <footer id="kont">
+            <p>2018 - Dawid</p>
+        </footer>
+		
+    </body>
+</html>
+
