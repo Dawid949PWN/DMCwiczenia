@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pol">
+<head>
+	<meta charset="UTF-8">
+	<title>Samochod_DM_jquery</title>
+	<meta content="name" language="polish">
+	<script src="jquery-3.1.1.min.js"></script>
+	<script>
+		$(document).ready(start)
+		var czasprędkość1 = (900);
+		var czasprędkość2 = (1100);
+		var czasprędkość3 = (1200);
+		var czaspassiwn = (1100);
+			var nazwa = mbenz;
+		function start(mbenz){
+			$("img").css("position", "relative");
+			$("#pierwszy").animate({"left": czaspassiwn}, czasprędkość1);
+			$("#drugie").animate({"opacity": 0}, czasprędkość2);
+			$("#trzecie").animate({"opacity": 1}, czasprędkość3);
+			$("#trzecie").animate({"left": czaspassiwn,"top": -500}, czaspassiwn,
+		function start(mbenz){
+			$(this).animate({"left": "550"}, czasprędkość3);
+			$("#pierwszy").animate({"left": "550"}, czasprędkość1);
+			});
+		};
+	</script>
+</head>
+	<body style="background-image:url(tlo222.png); margin-top:25%; background-size:100%; background-repeat:no-repeat;"
+>
+		<div><img id='pierwszy' src='auto.png' name='samochód1'></div>
+		<div><img id='drugie' src='auto.png' name='samochód2'></div>
+		<div><img id='trzecie' src='auto.png' name='samochód3'></div>
+	</body>
+</html>
+
