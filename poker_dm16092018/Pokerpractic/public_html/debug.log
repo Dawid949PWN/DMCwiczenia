@@ -1,0 +1,6 @@
+[0426/073724.536:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: A hozzáférés megtagadva. (0x5)
+[0426/073724.540:ERROR:main_dll_loader_win.cc(140)] Failed to load Chrome DLL from C:\Program Files (x86)\Everness\Application\57.0.2987.98\chrome.dll: A megadott modul nem található. (0x7E)
+[0426/073729.274:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: A hozzáférés megtagadva. (0x5)
+[0426/073729.278:ERROR:main_dll_loader_win.cc(140)] Failed to load Chrome DLL from C:\Program Files (x86)\Everness\Application\57.0.2987.98\chrome.dll: A megadott modul nem található. (0x7E)
+[0426/073735.502:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: A hozzáférés megtagadva. (0x5)
+[0426/073735.506:ERROR:main_dll_loader_win.cc(140)] Failed to load Chrome DLL from C:\Program Files (x86)\Everness\Application\57.0.2987.98\chrome.dll: A megadott modul nem található. (0x7E)

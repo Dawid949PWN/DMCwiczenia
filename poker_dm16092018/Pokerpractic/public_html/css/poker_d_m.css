@@ -1,0 +1,122 @@
+@font-face {
+    src: url(../font/RobotoCondensed-Light.ttf);
+    font-family:roboto;
+}
+
+@font-face {
+    src: url(../font/MyriadProCond.ttf);
+    font-family:myraid;
+}
+
+body{
+    background-image:url('../poker_img/poker_dm33.jpg');
+    background-attachment: fixed;
+    background-size:100% !important;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    font-family: roboto;
+}
+
+table{
+    margin: auto;
+    padding-top: 5px;
+    padding-right: 50px;
+    font-family: roboto;
+    float: left!important;
+    }
+
+.table .tr .td{
+    border: 1px solid #454545;
+    padding: 15px;
+    margin:0px!important;
+}
+
+.td{
+      border: 1px solid #454545;
+      padding: 2px;
+      font-weight: normal;
+}
+
+h1{
+    color: #fdff6c;
+    font-family:myraid;
+}
+
+/*Wynik:*/
+
+td,score{
+    font-size: 80%;
+    border: 1px solid transparent;
+    width: 50px;
+    padding: 4px;
+    border-radius: 2px;
+    text-align: center;
+    font-family: roboto;
+}
+
+#total{
+    border: 1px solid #454545;
+    border-radius: 3px;
+    font-size: 112%;
+    padding: 7.5px; 
+    background-color: transparent;
+    color: threedlightshadow;
+    font-family: roboto;
+}
+
+#totalscore{
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    font-family: roboto;
+}
+
+.score{
+    font-size: 14.4px;
+    width: 70px;
+    height: 70px!important;
+    color: threedlightshadow;
+    font-family: roboto;
+}
+
+/*Gurzik:*/
+
+#status1{
+    color: threedlightshadow;
+    font-size: 14.4px;
+    letter-spacing: 2px;
+}
+
+button{
+    background:#151515;
+    color: #fdff6c;
+    padding: 10px;
+    text-decoration: none;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #454545;
+    opacity: 0.8;
+    width: 100px;
+}
+
+button:active{
+    background-color: #151515;
+    color: yellow;
+    padding: 10px;
+    text-decoration: none;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid transparent;
+} 
+
+button:hover{
+    background:linear-gradient(#151515,#000);
+    color: #fcff27;
+    padding: 10px;
+    text-decoration: none;
+    outline: none;
+    border-radius: 3px;
+    opacity: 1;
+}
+
+
